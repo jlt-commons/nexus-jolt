@@ -1,0 +1,13 @@
+{:paths ["src"]
+
+ ;; Same floor glitter declares, for the same reason — a runtime below it
+ ;; should refuse to load rather than run wrong. See glitter's own deps.edn
+ ;; for the full history behind this specific value.
+ :jolt/min-version "0.7.24"
+
+ ;; A faithful Jolt port of cjohansen/nexus — no dependencies of its own.
+ :deps {}
+
+ :aliases {:test {:extra-paths ["test"] :main-opts ["-m" "nexus.test-runner"]}}
+
+ :tasks {test "jolt -M:test"}}
