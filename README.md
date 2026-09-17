@@ -1,5 +1,10 @@
 # nexus
 
+This repo is named `nexus-jolt` (matching its GitHub remote and `deps.edn`
+coordinate) to disambiguate from upstream `cjohansen/nexus` and from the
+`nexus.*` namespace prefix its own code uses — use `nexus-jolt` as the
+dependency name.
+
 A Jolt port of [nexus](https://github.com/cjohansen/nexus): data-driven
 action/effect/placeholder dispatch. `nexus.core` is the dispatch engine;
 `nexus.registry` is a registry-atom convenience API over it (register
